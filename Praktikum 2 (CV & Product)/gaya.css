@@ -1,0 +1,108 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+.navbar {
+  display: flex;
+  /* kiri dan kanan berjauhan */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a11d1d;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+/* Bagian kiri (logo + links) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* jarak antara logo dan links */
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Link navigasi */
+.nav-links a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f0a500;
+}
+
+/* Bagian kanan (search box) */
+.navbar-right input {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 900px;
+      margin: auto;
+      /* border: 1px solid #ccc; */
+      padding: 20px;
+    }
+    
+    
+    .gambar-kiri img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .tombol-kanan {
+      display: flex;
+      gap: 10px; /* Jarak antar tombol */
+    }
+    
+    .tombol-kanan button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      white-space: nowrap;
+    }
+
+    .tombol-kanan button:hover { 
+      background-color: #0056b3;
+    }
+
+    /* Responsive (opsional) */
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .tombol-kanan {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    }
+    /* .label {
+      display: block;
+      margin-top: 10px;
+    } */
+    /* .ukuran-sepatu, .tombol-kanan {
+      margin-top: 10px;
+    } */
